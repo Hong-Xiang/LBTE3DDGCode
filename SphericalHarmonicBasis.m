@@ -9,5 +9,6 @@ function y = SphericalHarmonicBasis(mu, xi, eta, l, m)
     if(m<0)
         y = 1/sqrt(pi)*NormalizedAssociatedLegendrePolynomails(l, -m, eta).*sin(-m*phi);
     end
-end
 
+%     y = 1/sqrt(2*pi)*NormalizedAssociatedLegendrePolynomails(l, m, eta)*exp(sqrt(-1)*m*phi);
+end
