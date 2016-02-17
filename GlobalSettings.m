@@ -1,8 +1,11 @@
-Nx = 10;
-Ny = 10;
-Nz = 10;
-Npx = 4;
-Npy = 4;
-Npz = 4;
-MaxL = 3;
-nlm = (MaxL+1)^2;
+global NX NY NZ NP;
+global mu xi eta;
+global hx hy hz;
+NX = 10;
+NY = 10;
+NZ = 10;
+NP = 4;
+
+global MAX_INTEGRAL_ERROR;
+MAX_INTEGRAL_ERROR = 1e-7;
+
