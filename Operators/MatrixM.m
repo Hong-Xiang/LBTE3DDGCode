@@ -1,7 +1,8 @@
 function M = MatrixM()
 global NX NY NZ NP
 M_local = MatrixMLocal();
-M = sparse(NX*NY*NZ*NP^3,NX*NY*NZ*NP^3, NP^3);
+% M = sparse(NX*NY*NZ*NP^3,NX*NY*NZ*NP^3, NP^3);
+M = zeros(NX*NY*NZ*NP^3);
 for ix = 1 : NX
     for iy = 1 : NY
         for iz = 1 : NZ
@@ -13,7 +14,7 @@ for ix = 1 : NX
         end
     end
 end
-M = sparse(M);
+% M = sparse(M);
 
 end
 

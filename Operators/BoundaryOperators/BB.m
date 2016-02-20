@@ -7,11 +7,11 @@ for iI = 1 : NP
             for k = 1 : NP
                 I = IndexIJK2Local(iI, j, k);
                 J = IndexIJK2Local(iJ, j, k);
-                BB(I,J) = (1-alpha)*mu*hy*hz*LegendreBasis(iI, 1)*LegendreBasis(iJ,1);
+                BB(I,J) = (1-alpha)*mu*LegendreBasis(iI-1, 1)*LegendreBasis(iJ-1,-1)*hy*hz/4;
             end
         end
     end
 end
-BB = sparse(BB);
+% BB = sparse(BB);
 end
 
